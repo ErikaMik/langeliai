@@ -11,6 +11,7 @@ var object = {
 };
 
 var right = document.getElementById('right');
+var jonas = document.getElementById('jonas');
 
 
 // for (var i = 1; i < 11; i++) {
@@ -53,16 +54,30 @@ result -= 10;
 // Math
 // True/false/null
 
-function generate() {
+function generate(qty) {
 
 	var right = document.getElementById('right');
 	right.innerHTML = '';
 
-	for (var i = 0; i < 30; i++) {
+	for (var i = 0; i < qty; i++) {
 		console.log(i);
 		var r = Math.round(Math.random() * 255);
 		var g = Math.round(Math.random() * 255);
 		var b = Math.round(Math.random() * 255);
 		right.innerHTML += '<div class="square" style="background-color: rgb('+r+','+g+','+b+');">' + i + '</div>';
 	}
+}
+
+
+
+function show_items() {
+	console.log('Showing');
+	jonas.style.display = 'inline';
+}
+
+
+function hide_items() {
+	console.log('Hiding');
+	jonas.style.display = 'none';
+	jonas.styl
 }

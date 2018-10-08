@@ -8,10 +8,17 @@
 <body>
 	<div class="container">
 		<h1 id="main_header">Java Script</h1>
-		<button onclick="generate();">Generate</button>
+		<button class="m-4 btn btn-info" onclick="generate(5);">Generate 5</button>
+		<button class="m-4 btn btn-info" onclick="generate(10);">Generate 10</button>
+		<button class="m-4 btn btn-info" onclick="generate(20);">Generate 20</button>
+		<hr>
+
+		<div class="btn btn-success" onclick="show_items();">Show</div>
+		<div class="btn btn-danger" onclick="hide_items();">Hide</div>
+
 		<div class="row">
 			<div id="left" class="col left">
-				<div class="square">Jonas</div>
+				<div id="jonas" class="square">Jonas</div>
 				<div class="square">Pranas</div>
 			</div>
 			<div id="right" class="col right text-center">
